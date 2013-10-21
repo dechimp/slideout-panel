@@ -15,8 +15,30 @@
     </head>
     <body>
     <div id="slideout">
-      <div id="feedback"><a href="#">Feedback</a></div>
-        [form code goes here]
+      <div id="slideoutTab">
+        <a href="#">Feedback</a>
+      </div>
+      <form id="slideoutForm">
+        <fieldset>
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Name" required />
+        </fieldset>
+        <fieldset>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Email" required />
+        </fieldset>
+        <fieldset>
+          <label>Phone</label>
+          <input type="text" name="phone" placeholder="Phone" />
+        </fieldset>
+        <fieldset>
+          <label>Favorite Beer</label>
+          <input type="text" name="favorite_beer" placeholder="Favorite Beer" required />
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
     </div>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/main.js"></script>

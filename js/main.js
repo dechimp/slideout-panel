@@ -7,7 +7,7 @@
   };
 
   $(function() {
-    return $("#feedback").on('click', slideToggle);
+    return $("#slideoutTab").on('click', slideToggle);
   });
 
 }).call(this);

@@ -2,28 +2,22 @@
 @import "compass/css3/text-shadow"
 @import "compass/css3/transform"
 @import "compass/css3/transition"
+@import "compass/utilities/general/clearfix"
 
 =debug-slideout   
   background: blue
   opacity: 0.7
 
-$slideout-width: 200px
+$slideout-width: 300px
+$slideout-height: 150px
+$hot-color: #f80
+$background: $hot-color
+$highlight: #fb3
+$tab-width: 100px
 
 =unrotate
   +transform(rotate(-90deg))
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-1)
-
-#slideout  
-  +debug-slideout
-  height: 150px
-  width: $slideout-width
-  position: fixed
-  top: 0px
-  left: -200px
-  +transition-duration(0.3s)
-.slide
-  +transform(translate(250px,0px))
-  
 
 =rounded-corners  
   +border-top-left-radius(9px)  
@@ -33,40 +27,75 @@ $slideout-width: 200px
   background: gray
   opacity: 0.5
 
+=debug-form
+  background: green
+  opacity: 0.8
+
 =rotate  
   +transform(rotate(90deg))
   +transform-origin(0%,0%)
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
+
+=bold-text
+  color: #fff 
+  font-family: Arial, sans-serif 
+  font-size: 17px 
+  font-weight: bold 
+  text-decoration: none 
+  +text-shadow(3px 3px 3px #5f0220)
+  
+.slide
+  +transform(translate($slideout-width,0px))
+
+#slideout  
+  // +debug-slideout
+  height: $slideout-height
+  width: $slideout-width
+  position: fixed
+  top: 100px
+  left: (-$slideout-width)
+  // not sure why but this is causing a bug when closing the slideout box
+    // +transition-duration(0.1s)  
  
-#feedback   
-  +debug-feedback
-  height: $slideout-width 
-  width: 100px 
-  position: relative
-  +rotate
-  left: 0px
-  top: 0px
-  z-index: 999
-  a   
+  #slideoutTab
+    // +debug-feedback
+    height: $slideout-width 
+    width: $slideout-height
     position: relative
-    background: #f80
-    top: (-29px - $slideout-width)
-    height: 15px 
-    width: 70px 
-    padding: 8px 16px
-    color: #fff 
-    font-family: Arial, sans-serif 
-    font-size: 17px 
-    font-weight: bold 
-    text-decoration: none 
-    +text-shadow(2px 1px 0px #000)
-    +rounded-corners
-  &:hover 
-    background: #fb3 
-  &.slideIn  
-    left: 250px
-   
- 
+    +rotate
+    left: 0px
+    top: 0px
+    z-index: -1 
+    a   
+      position: fixed
+      background: $background
+      top: (-29px - $slideout-width)
+      left: 30%
+      height: auto 
+      width: auto 
+      padding: 8px 16px
+      +bold-text
+      +rounded-corners
+      +transition-duration(0.1s)
+      &:hover 
+        +transform(translate(0px,-5px) scale(1.05))
 
-
+  #slideoutForm
+    // +debug-form
+    $slideout-padding: 10px
+    width: ($slideout-width - (2 * $slideout-padding))
+    background: $background
+    padding: $slideout-padding
+    position: fixed
+    top: 0px
+    +border-right-radius(3px)
+    label
+      display: block
+      +bold-text
+    input
+      +border-radius(4px)
+    [type=submit]:hover
+      +transform(translate(1px,1px))
+    fieldset
+      margin: 10px 0px
 
