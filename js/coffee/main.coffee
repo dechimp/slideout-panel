@@ -1,9 +1,6 @@
-slideRight = ->
-  $("#slideout_inner").animate({left: '+=250px'}, 'fast')
-  $("#feedback").animate({left: '+=250px'}, 'fast')
-slideLeft = ->
-  $("#slideout_inner").animate({left: '-=250px'}, 'fast')
-  $("#feedback").animate({left: '-=250px'}, 'fast')
+slideToggle = ->
+  $("#slideout").toggleClass("slide")
 $ ->
-  $("#slideout").on('click', slideRight)
+  $("#feedback").on('click', slideToggle)
+  
 

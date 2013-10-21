@@ -1,0 +1,75 @@
+/* line 16, ../sass/slide_out_panel.sass */
+#slideout {
+  background: blue;
+  opacity: 0.7;
+  height: 150px;
+  width: 200px;
+  position: fixed;
+  top: 0px;
+  left: -200px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* line 24, ../sass/slide_out_panel.sass */
+.slide {
+  -webkit-transform: translate(250px, 0px);
+  -moz-transform: translate(250px, 0px);
+  -ms-transform: translate(250px, 0px);
+  -o-transform: translate(250px, 0px);
+  transform: translate(250px, 0px);
+}
+
+/* line 41, ../sass/slide_out_panel.sass */
+#feedback {
+  background: gray;
+  opacity: 0.5;
+  height: 200px;
+  width: 100px;
+  position: relative;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+}
+/* line 50, ../sass/slide_out_panel.sass */
+#feedback a {
+  position: relative;
+  background: #ff8800;
+  top: -229px;
+  height: 15px;
+  width: 70px;
+  padding: 8px 16px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 1px 0px black;
+  -moz-border-radius-topleft: 9px;
+  -webkit-border-top-left-radius: 9px;
+  border-top-left-radius: 9px;
+  -moz-border-radius-topright: 9px;
+  -webkit-border-top-right-radius: 9px;
+  border-top-right-radius: 9px;
+}
+/* line 64, ../sass/slide_out_panel.sass */
+#feedback:hover {
+  background: #ffbb33;
+}
+/* line 66, ../sass/slide_out_panel.sass */
+#feedback.slideIn {
+  left: 250px;
+}
