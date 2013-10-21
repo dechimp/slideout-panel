@@ -1,2 +1,9 @@
+slideRight = ->
+  $("#slideout_inner").animate({left: '+=250px'}, 'fast')
+  $("#feedback").animate({left: '+=250px'}, 'fast')
+slideLeft = ->
+  $("#slideout_inner").animate({left: '-=250px'}, 'fast')
+  $("#feedback").animate({left: '-=250px'}, 'fast')
 $ ->
-  alert "hello world"
+  $("#slideout").on('click', slideRight)
+
