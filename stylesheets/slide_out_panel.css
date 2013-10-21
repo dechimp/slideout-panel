@@ -94,7 +94,7 @@
   text-shadow: 3px 3px 3px #5f0220;
 }
 /* line 95, ../sass/slide_out_panel.sass */
-#slideout #slideoutForm input {
+#slideout #slideoutForm input, #slideout #slideoutForm textarea {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
