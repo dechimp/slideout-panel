@@ -6,13 +6,14 @@ click on it.  Used commonly for contact/feedback forms.
 Before:
 
     -- 
-    C |
-    O |
-    N |
-    T |
+    F |
+    E |
+    E |
+    D |
+    B |
     A |
     C |
-    T |
+    K |
     __|
 
 After:
@@ -21,15 +22,16 @@ After:
                      *
     Name:_________   *
                      *--- 
-                     * C |
-    Email:           * O |
-    ______________   * N |
-                     * T |
-                     * A |
-    Subject:         * C |
-    ______________   * T |
-                     *___|
-    Comment:         *
+                     * F |
+    Email:           * E |
+    ______________   * E |
+                     * D |
+                     * B |
+    Subject:         * A |
+    ______________   * C |
+                     * K |
+    Comment:         *___|
+    ____________     *
     _____________    *
     _____________    *
                      *
