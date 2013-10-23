@@ -42,3 +42,4 @@ After:
     =================*
 
 
+This slideout panel is inspired by http://www.usabilitypost.com/2011/04/19/pure-css-slideout-interface/
