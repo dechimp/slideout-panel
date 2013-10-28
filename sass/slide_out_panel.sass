@@ -54,6 +54,8 @@ $tab-width: 100px
   position: fixed
   top: 100px
   left: (-$slideout-width)
+  // not sure why but this is causing a bug when closing the slideout box
+    // +transition-duration(0.1s)  
  
   #slideoutTab
     // +debug-feedback
@@ -95,5 +97,4 @@ $tab-width: 100px
       +transform(translate(1px,1px))
     fieldset
       margin: 10px 0px
-      border: none
 

@@ -63,11 +63,11 @@
 }
 /* line 80, ../sass/slide_out_panel.sass */
 #slideout #slideoutTab a:hover {
-  -webkit-transform: translate(0px, -5px);
-  -moz-transform: translate(0px, -5px);
-  -ms-transform: translate(0px, -5px);
-  -o-transform: translate(0px, -5px);
-  transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, -5px) scale(1.05);
+  -moz-transform: translate(0px, -5px) scale(1.05);
+  -ms-transform: translate(0px, -5px) scale(1.05);
+  -o-transform: translate(0px, -5px) scale(1.05);
+  transform: translate(0px, -5px) scale(1.05);
 }
 /* line 83, ../sass/slide_out_panel.sass */
 #slideout #slideoutForm {
@@ -86,8 +86,14 @@
 /* line 92, ../sass/slide_out_panel.sass */
 #slideout #slideoutForm label {
   display: block;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 3px 3px 3px #5f0220;
 }
-/* line 94, ../sass/slide_out_panel.sass */
+/* line 95, ../sass/slide_out_panel.sass */
 #slideout #slideoutForm input, #slideout #slideoutForm textarea {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -95,7 +101,7 @@
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 96, ../sass/slide_out_panel.sass */
+/* line 97, ../sass/slide_out_panel.sass */
 #slideout #slideoutForm [type=submit]:hover {
   -webkit-transform: translate(1px, 1px);
   -moz-transform: translate(1px, 1px);
@@ -103,8 +109,7 @@
   -o-transform: translate(1px, 1px);
   transform: translate(1px, 1px);
 }
-/* line 98, ../sass/slide_out_panel.sass */
+/* line 99, ../sass/slide_out_panel.sass */
 #slideout #slideoutForm fieldset {
   margin: 10px 0px;
-  border: none;
 }
