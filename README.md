@@ -1,5 +1,7 @@
 # Web UI Slide-Out Panel
 
+[view the demo](https://dl.dropboxusercontent.com/u/27500327/slide_out_panel/index.html)
+
 This is a tab on the side of the screen that pulls out a box when you
 click on it.  Used commonly for contact/feedback forms.
 
