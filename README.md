@@ -1,6 +1,8 @@
 # Web UI Slide-Out Panel
 
-[view the demo](https://dl.dropboxusercontent.com/u/27500327/slide_out_panel/index.html)
+[view the demo](http://dechimp.github.io/slideout-panel)
+
+see also the [ascii slideout panel](https://github.com/dechimp/ascii-slideout-panel)
 
 This is a tab on the side of the screen that pulls out a box when you
 click on it.  Used commonly for contact/feedback forms.
