@@ -1,4 +1,4 @@
-# Web UI Slide-Out Panel
+# Slide-Out Panel
 
 [view the demo](http://dechimp.github.io/slideout-panel)
 
